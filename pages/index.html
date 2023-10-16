@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="James Haydon">
+    <meta name="description" content="This is the title and navbar">
+    <link href="https://fonts.cdnfonts.com/css/handelgotdbol" rel="stylesheet">
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="../main.css" type="text/css">
+    <link rel="stylesheet" href="../components/navbar.css" type="text/css">
+</head>
+
+<body>
+    <h1 style="font-size:60px; text-align: right; padding-right: 1em;">Twilight Imperium Planner</h1>
+    <div id="navbar-placeholder"></div>
+
+    <section id="My Plan">
+    <h2>How I'll Be Doing It</h2>
+    <p>My plan is as follows...</p>
+        <ol>
+        <li>...this is what new lines look like...</li>
+        <li>...this...</li>
+        <li>...and this.</li>
+        </ol>
+    </section>
+
+    <section id="Places to Visit">
+    <h3>I'm also planning a vacation!</h3>
+    <p>I've been working hard so I deserve a holiday.</p>
+
+    <h4>Places I Want To Visit</h4>
+    <ul>
+        <li><p>Antarctica</p></li>
+        <li><p>The Sahara</p></li>
+        <li><p>The Bermuda Triangle</p></li>
+    </ul>
+    </section>
+
+    <section id="Places to Avoid">
+    <h5>Places I want to Avoid</h5>
+    <dl>
+        <dt>
+            <a href="https://en.wikipedia.org/wiki/Burnley">Burnley</a>
+        </dt>
+        <dd>I hear this is <strong>inhospitable</strong></dd>
+
+        <dt>France</dt>
+        <dd>Too many <em>French</em></dd>
+    </dl>
+    </section>
+
+    <hr>
+
+    &lt;&lt;&lt; &copy; <a href="about.html"> James Haydon</a> &gt;&gt;&gt;
+
+</body>
+
+<script>
+    // Fetch and insert the navigation bar
+    fetch('../components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+</script>
+
+</html>
