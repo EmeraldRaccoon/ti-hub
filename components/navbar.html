@@ -1,10 +1,31 @@
-<nav>
-  <ul>
-      <li><a href="../pages/index.html">Home</a></li>
-      <li><a href="../pages/factions.html">Factions</a></li>
-      <li><a href="../pages/calendar.html">Calendar</a></li>
-      <li><a href="../pages/player_profiles.html">Player Profiles</a></li>
-      <li><a href="../pages/rules.html">Rules</a></li>
-      <li><a href="../pages/about.html">About</a></li>
-  </ul>
-</nav>
+<div class="topnav" id="myTopnav">
+  <a href="../pages/index.html" class="link">Home</a>
+  <div class="dropdown">
+    <a href="../pages/factions.html" class="dropbtn">Factions</a>
+    <div class="factions-dropdown">
+      <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" spellcheck="false">
+        <a target="_blank" href="https://twilight-imperium.fandom.com/wiki/The_Arborec">The Arborec</a>
+        <a target="_blank" href="https://twilight-imperium.fandom.com/wiki/The_Barony_of_Letnev">The Barony of Letnev</a>
+        <a target="_blank" href="https://twilight-imperium.fandom.com/wiki/The_Clan_of_Saar">The Clan of Saar</a>
+      </div>
+    </div>
+  </div>
+  <a href="../pages/tech_tree.html" class="link">Tech Tree</a>
+  <a href="../pages/calendar.html" class="link">Calendar</a>
+  <div class="dropdown">
+      <button class="dropbtn">Player Profiles</button>
+      <div class="dropdown-content">
+        <a href="../pages/player_profiles/ben.html">Ben</a>
+        <a href="../pages/player_profiles/big_dave.html">Big Dave</a>
+        <a href="../pages/player_profiles/dave.html">Dave</a>
+        <a href="../pages/player_profiles/james.html">James</a>
+        <a href="../pages/player_profiles/mike.html">Mike</a>
+        <a href="../pages/player_profiles/tom.html">Tom</a>
+      </div>
+  </div>
+  <a href="../pages/rules.html" class="link">Rules</a>
+  <div class="topnav-right">
+      <a href="../pages/about.html" class="link">User</a>
+  </div>
+</div>  
