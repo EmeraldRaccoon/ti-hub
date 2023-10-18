@@ -8,6 +8,7 @@
     <link href="https://fonts.cdnfonts.com/css/handelgotdbol" rel="stylesheet">
     <link rel="icon" href="html5.png" type="image/x-icon">
     <link rel="stylesheet" href="../main.css" type="text/css">
+    <link rel="stylesheet" href="../components/image_zoom.css" type="text/css">
 </head>
 
 <body>
@@ -18,10 +19,22 @@
         <h1>Tech Tree</h1>
     </div>
 
+    <div class="large-image">
+        <div class="tech-tree">
+            <img src="../images/tech_tree.png" title="Tech Tree" class="tech-tree-img" alt="Tech Tree" onclick="openModal(this.src)">
+        </div>
+    </div>
+    <!--Image zoom-->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
 </div>
 
 </body>
 
 <script src="../components/navbar.js"></script>
+<script src="../components/image_zoom.js"></script>
 
 </html>

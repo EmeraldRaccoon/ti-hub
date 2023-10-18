@@ -163,3 +163,18 @@ body {
 }
 
 #myInput:focus {outline: 0px solid #ddd;}
+
+
+/* ----------------------Whole page width images------------------------ */
+
+.tech-tree {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.tech-tree-img {
+    border-radius: 3em;
+    cursor: zoom-in;
+}
+
